@@ -40,7 +40,7 @@ function completarTarea(id) {
 
 function eliminarTarea(id) {
     tareas = tareas.filter(t => t.id !== id);
-  // Tu codigo aqui...
+ 
 }
 
 function listarPorEstado(estado) {

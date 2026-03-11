@@ -57,3 +57,16 @@ function resumen() {
     
   
 }
+
+
+agregarTarea("Comprar leche");
+agregarTarea("Lavar el auto");
+agregarTarea("Hacer ejercicio");
+
+completarTarea(2);
+
+listarPorEstado("pendiente");
+listarPorEstado("completada");
+
+resumen();
+

@@ -60,4 +60,4 @@ function aplicarTodas(a,b, operaciones) {
 
 //7. Mostrar resultados por consola
 const operaciones = [sumar, restar, multiplicar, dividir];
-aplicarTodas(10,5, operaciones);
+aplicarTodas(5,5, operaciones);

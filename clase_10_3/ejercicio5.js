@@ -28,7 +28,7 @@
 
 //1. Funcion clasica sumar
 function sumar (a, b) {
-    return a +b;
+    return a + b;
 }
 
 //2. Arrow function sumar
@@ -43,12 +43,15 @@ function operar(a,b, callback) {
 const restar = (a,b) => a - b;
 const multiplicar = (a,b) => a*b;
 const dividir = (a,b) => a/b;
-
+const operador = 3;
+const operador2= 2;
 //5. Usar operar con cada una de las operaciones
-console.log("La suma es: " + operar(10,5,sumar));
+console.log("La suma es: " + operar(operador,  operador2, sumar ));
 console.log("La resta: " +operar(10,5, restar));
 console.log("La multiplicación es: " +operar(10,5, multiplicar));
 console.log("la división es: " +operar(10,5, dividir));
+
+
 
 //6. Crear aplicarATodas
 

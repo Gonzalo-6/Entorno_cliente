@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Futbolisimos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>   Futbolisimos    </h1>
+  </header>
+
+    <section class="controls">
+        <select id="filtro-posicion">
+            <option value="todas">Todas</option>
+            <option value="delantero">Delantero</option>
+            <option value="centrocampista">Centrocampista</option>
+            <option value="defensa">Defensa</option>
+            <option value="portero">Portero</option>
+        </select>
+
+        <input type="text" id="busqueda" placeholder="Buscar jugador...">
+    </section>
+
+    <section id="estadisticas">
+        <p>Total goles: <span id="total-goles">0</span></p>
+        <p>Media goles: <span id="media-goles">0</span></p>
+        <p>Máximo goleador: <span id="top-jugador">-</span></p>
+    </section>
+
+<section id="tabla" class="grid"></section>
+
+  <script src="app.js"></script>
+</body>
+</html>

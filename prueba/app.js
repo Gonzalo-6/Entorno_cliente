@@ -129,4 +129,24 @@ document.addEventListener("DOMContentLoaded", () => {
   cargarDatos();
 });
 
-fetch("data/jugadores.json")
+/**********************
+ * 9. Carga de datos alternativa (si no quieres usar fetch)
+ * **********************/
+async function cargarDatos() {
+  try {
+    const res = await fetch("data/jugadores.json");
+
+    if (!res.ok) throw new Error("Error al cargar JSON");
+
+    const data = await res.json();
+
+    jugadores = agruparPorJugador(data);
+    jugadoresFiltrados = jugadores;
+
+    renderJugadores(jugadoresFiltrados);
+    actualizarEstadisticas(jugadoresFiltrados);
+
+  } catch (error) {
+    console.error("Error:", error);
+  }
+}

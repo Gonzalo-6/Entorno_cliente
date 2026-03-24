@@ -128,3 +128,5 @@ document.addEventListener("DOMContentLoaded", () => {
   initEventos();
   cargarDatos();
 });
+
+fetch("data/jugadores.json")

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Catálogo</title>
+  <style>
+    body { 
+        font-family: sans-serif; 
+        padding: 20px; 
+        background: #f5f5f5;
+    }
+    .catalogo { 
+        display: 
+        flex; gap: 16px; 
+        flex-wrap: wrap; 
+    }
+    .card { 
+        background: white; 
+        padding: 16px; 
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
+        width: 200px; 
+    }
+    .boton { padding: 8px 16px; 
+        background: #0066cc; 
+        color: white;
+           border: none; 
+           border-radius: 4px; 
+           cursor: pointer; 
+     }
+    .boton.activo { 
+        background: #00aa44; 
+    }
+    #btnEliminar { 
+        margin-bottom: 16px; 
+        background: #cc0000; 
+    }
+  </style>
+</head>
+<body>
+  <button id="btnEliminar" class="btn">Eliminar última tarjeta</button>
+  <div class="catalogo" id="catalogo"></div>
+   <div id="nuevo_hijo"><button id="boton">Agregar tarjeta</button></div>
+  <script src="app.js"></script>
+</body>
+</html>

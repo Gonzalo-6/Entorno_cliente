@@ -16,3 +16,8 @@ async function obtenerPosts() {
         return[];
     }
 }
+
+async function obtenerPostPorId(id) {
+
+    try {
+        const res = await fetch(`${API}/${id}`);}

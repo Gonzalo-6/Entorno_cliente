@@ -20,4 +20,21 @@ async function obtenerPosts() {
 async function obtenerPostPorId(id) {
 
     try {
-        const res = await fetch(`${API}/${id}`);}
+        const res = await fetch(`${API}/${id}`);
+        if (!res.ok) {
+            throw new Error(`Error HTTP: ${res.status}`);
+        }else {
+            const post = await res.json();
+            console.log("Post obtenido:", post);
+            return post;
+        }       
+    }catch (error) {
+        console.error(`Error al obtener post con ID ${id}:`, error.message);
+        return null;
+    }   
+}
+
+// Prueba de las funciones
+obtenerPosts();
+obtenerPostPorId(1);
+obtenerPostPorId(9999);

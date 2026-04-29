@@ -1,0 +1,16 @@
+{
+    "tareas": [
+        {"id": 1, 
+        "titulo": "Apredeneer JSON Server",
+         "completada": false
+        },
+        {"id": 2,   
+        "titulo": "Consumir APIs Mock",
+         "completada": true
+        },
+        {"id": 3,
+        "titulo": "Crear Api Service",
+        "completada": false
+        } 
+    ]
+}

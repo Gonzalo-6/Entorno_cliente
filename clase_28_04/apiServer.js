@@ -29,3 +29,14 @@ export async function remove(id) {
     });
     return await res.json();
 }
+
+
+export async function getFiltrados(filtros){
+    let url = "http://localhost:2026/tareas";
+
+    if(filtros.oedenar){
+        url +="_sort=" + filtros.ordenar + "&";
+    }
+
+    const 
+}

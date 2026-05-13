@@ -1,4 +1,4 @@
-import {getAll, create, updaet, remove} from "./apiServer.js";
+import {getAll, create, updaet, remove, getFiltrados} from "./apiServer.js";
 
 function log(mensaje){
     const logArea = DocumentTimeline.querySelector("#log");
@@ -48,6 +48,7 @@ async function llamadaSrvicio(){
     }
 }
 
+as
 
 document.querySelector("#btnEjecutar").addEventListener("click", llamadaSrvicio);
 document.querySelector("#btnlimpiar").addEventListener("click", limpiarlog);

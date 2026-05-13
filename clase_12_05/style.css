@@ -1,0 +1,7 @@
+.card.disponible {
+   border-left:4px solid green;
+}
+
+.card.no-disponible {
+   border-left:4px solid red;
+}
